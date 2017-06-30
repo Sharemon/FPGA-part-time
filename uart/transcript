@@ -1,0 +1,103 @@
+# Reading C:/modeltech_10.1a/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.1a Feb 22 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {tb_uart.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module clk_div_uart
+# 
+# Top level modules:
+# 	clk_div_uart
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module uart_ctrl
+# 
+# Top level modules:
+# 	uart_ctrl
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.tb_uart glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.tb_uart(fast)
+# Loading work.top(fast)
+# Loading work.clk_gen(fast)
+# Loading unisims_ver.IBUFG(fast)
+# Loading unisims_ver.DCM_SP(fast)
+# Loading unisims_ver.dcm_sp_clock_divide_by_2(fast)
+# Loading unisims_ver.dcm_sp_maximum_period_check(fast)
+# Loading unisims_ver.dcm_sp_maximum_period_check(fast__1)
+# Loading unisims_ver.dcm_sp_clock_lost(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.uart_ctrl(fast)
+# Loading work.uart_tx(fast)
+# Loading work.clk_div_uart(fast)
+# Loading work.uart_rx(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3017) source/sim/tb_uart.v(219): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /tb_uart/u_top
+# ** Warning: (vsim-3722) source/sim/tb_uart.v(219): [TFMPC] - Missing connection for port 'led'.
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position insertpoint sim:/tb_uart/u_top/u_uart/u_uart_rx/*
+add wave -position insertpoint sim:/tb_uart/u_top/u_uart/u_uart_tx/*
+restart -f
+# Loading work.tb_uart(fast)
+# Loading work.top(fast)
+# Loading work.clk_gen(fast)
+# Loading unisims_ver.IBUFG(fast)
+# Loading unisims_ver.DCM_SP(fast)
+# Loading unisims_ver.dcm_sp_clock_divide_by_2(fast)
+# Loading unisims_ver.dcm_sp_maximum_period_check(fast)
+# Loading unisims_ver.dcm_sp_maximum_period_check(fast__1)
+# Loading unisims_ver.dcm_sp_clock_lost(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.uart_ctrl(fast)
+# Loading work.uart_tx(fast)
+# Loading work.clk_div_uart(fast)
+# Loading work.uart_rx(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3017) source/sim/tb_uart.v(219): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /tb_uart/u_top
+# ** Warning: (vsim-3722) source/sim/tb_uart.v(219): [TFMPC] - Missing connection for port 'led'.
+# 
+run -continue

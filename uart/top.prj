@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/clk_gen.v"
+verilog work "source/uart/clk_div_uart.v"
+verilog work "source/uart/uart_tx.v"
+verilog work "source/uart/uart_rx.v"
+verilog work "source/uart/uart_ctrl.v"
+verilog work "source/top/top.v"

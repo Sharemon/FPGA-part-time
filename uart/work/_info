@@ -1,0 +1,166 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Roy\Desktop\Proj Local\FPGA-part-time\uart
+T_opt
+V2M[6gzo5SUE6NnL0ibSXG1
+04 7 4 work tb_uart fast 0
+Z1 04 4 4 work glbl fast 0
+=1-507b9dcc601a-59567200-1c5-1b274
+Z2 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+Z3 OE;O;10.1a;51
+T_opt1
+V>ZHQdDlLnBBNJ?010m8k_1
+04 3 4 work top fast 0
+R1
+=1-507b9dcc601a-59566cbf-18e-1ae14
+R2
+n@_opt1
+R3
+Z4 dC:\Users\Roy\Desktop\Proj Local\FPGA-part-time\uart
+vclk_div_uart
+IXKQ:T1OT[:NzelR;f6b^[2
+VCa4GaKG57m7T3ioZ=az^A2
+R4
+w1498832770
+8source/uart/clk_div_uart.v
+Fsource/uart/clk_div_uart.v
+L0 21
+Z5 OE;L;10.1a;51
+r1
+31
+Z6 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 X`?X0bjS9=94=OO_dmc0]1
+!s90 -reportprogress|300|source/uart/clk_div_uart.v|
+!s108 1498837501.396000
+!s107 source/uart/clk_div_uart.v|
+!i10b 1
+!s85 0
+vclk_gen
+IF_<3=FcDJkK[Bz5@:HC?T1
+V4?@`RQDe6nRQ9EeZS:GG`3
+R4
+w1498833066
+8ipcore_dir/clk_gen.v
+Fipcore_dir/clk_gen.v
+L0 68
+R5
+r1
+31
+R6
+!s100 di`7395]R2d=i@Fb5KlB73
+!s90 -reportprogress|300|ipcore_dir/clk_gen.v|
+!s108 1498837501.197000
+!s107 ipcore_dir/clk_gen.v|
+!i10b 1
+!s85 0
+vglbl
+I6H>g[GGJX>m@E:8e`lYJG2
+VM[9mS]S:KA1i4VeCMX35[3
+R4
+w1370717315
+8C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v
+FC:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R5
+r1
+31
+R6
+!s100 i0AkO:IL:kR1CaTBQ5YIl2
+!s90 -reportprogress|300|C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v|
+!i10b 1
+!s85 0
+!s108 1498837502.888000
+!s107 C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v|
+vtb_uart
+I<bk]VWBdK8@kfzhgzGoMd0
+VOogb1_jz9cl;N9P=WzVAg2
+R4
+w1498834176
+8source/sim/tb_uart.v
+Fsource/sim/tb_uart.v
+L0 21
+R5
+r1
+31
+R6
+!s100 JF[bm_@kz1R?JYoAaAo[[2
+!s90 -reportprogress|300|source/sim/tb_uart.v|
+!s108 1498837502.646000
+!s107 source/sim/tb_uart.v|
+!i10b 1
+!s85 0
+vtop
+IZA9`NU0OlED0=MzTI@K2X2
+VIM`88BZ]CZi`bXh_kW<o@0
+R4
+w1498833570
+8source/top/top.v
+Fsource/top/top.v
+L0 21
+R5
+r1
+31
+R6
+!s100 c@<[cK5:MdcoU_NTa<?3=0
+!s90 -reportprogress|300|source/top/top.v|
+!s108 1498837502.430000
+!s107 source/top/top.v|
+!i10b 1
+!s85 0
+vuart_ctrl
+IKhi<jZRN1DUH@YbUS_H7>0
+VMiMcM4TYX7`AiFPL]ffI21
+R4
+w1498833378
+8source/uart/uart_ctrl.v
+Fsource/uart/uart_ctrl.v
+L0 21
+R5
+r1
+31
+R6
+!s100 ;U44GbRmzEah@jiLamMjP1
+!s90 -reportprogress|300|source/uart/uart_ctrl.v|
+!s108 1498837502.111000
+!s107 source/uart/uart_ctrl.v|
+!i10b 1
+!s85 0
+vuart_rx
+I0jlD<eXlg>FTSz]PP7MZ62
+VcfA<Ho:SSLR_VcKmPH^al0
+R4
+w1498837408
+8source/uart/uart_rx.v
+Fsource/uart/uart_rx.v
+L0 21
+R5
+r1
+31
+R6
+!s90 -reportprogress|300|source/uart/uart_rx.v|
+!s100 2A7CN7S>5dSMX]L]0h<B20
+!s108 1498837501.878000
+!s107 source/uart/uart_rx.v|
+!i10b 1
+!s85 0
+vuart_tx
+I0gOc5?cZ3m8ZdCPo?5AHC0
+Vb:mNGHj`eh<2jWKhn5[^^2
+R4
+w1498836124
+8source/uart/uart_tx.v
+Fsource/uart/uart_tx.v
+L0 21
+R5
+r1
+31
+R6
+!s100 o2EU`3N]OMoF6eZ6kE2[=0
+!s90 -reportprogress|300|source/uart/uart_tx.v|
+!s108 1498837501.603000
+!s107 source/uart/uart_tx.v|
+!i10b 1
+!s85 0
