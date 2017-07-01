@@ -57,7 +57,7 @@ assign rx_fe = ~rx_dly[1] & rx_dly[2];
 always@ (posedge clk or negedge rst_n) begin
     if (!rst_n)                rx_last <= 1'b0;
     else if (rx_fe)            rx_last <= 1'b1;
-    else if (cnt == 5'h13)     rx_last <= 1'b0;
+    else if (cnt == 5'h11)     rx_last <= 1'b0;
 end
 
 
@@ -90,7 +90,7 @@ end
 always@ (posedge clk or negedge rst_n) begin
     if (!rst_n) rx_rdy_dly <= 2'b00;
     else begin
-        rx_rdy_dly[0] <= (cnt == 5'h12);
+        rx_rdy_dly[0] <= (cnt == 5'h11);
         rx_rdy_dly[1] <= rx_rdy_dly[0];
     end
 end

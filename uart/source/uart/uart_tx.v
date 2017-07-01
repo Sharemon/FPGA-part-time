@@ -56,7 +56,7 @@ end
 always@ (posedge clk or negedge rst_n) begin
     if (!rst_n)             tx_last <= 1'b0;
     else if (tx_en_r)       tx_last <= 1'b1;
-    else if (cnt == 5'h14)  tx_last <= 1'b0;
+    else if (cnt == 5'h13)  tx_last <= 1'b0;
 end
 
 

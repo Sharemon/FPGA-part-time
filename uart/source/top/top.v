@@ -51,7 +51,7 @@ clk_gen i_clkgen(
 
 
 // led 
-assign led = 8'hff;
+assign led = 8'hff;//{working_led, 7'h0};
 
 always@ (posedge sys_clk or negedge sys_rst_n) begin
     if (!sys_rst_n)                     led_cnt <= 24'd0;

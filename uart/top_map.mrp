@@ -10,40 +10,40 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Jun 30 23:41:08 2017
+Mapped Date    : Sat Jul 01 10:45:02 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Slice Logic Utilization:
-  Number of Slice Registers:                    61 out of  11,440    1%
-    Number used as Flip Flops:                  61
+  Number of Slice Registers:                    62 out of  11,440    1%
+    Number used as Flip Flops:                  62
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         53 out of   5,720    1%
-    Number used as logic:                       49 out of   5,720    1%
-      Number using O6 output only:              40
+  Number of Slice LUTs:                         56 out of   5,720    1%
+    Number used as logic:                       48 out of   5,720    1%
+      Number using O6 output only:              39
       Number using O5 output only:               0
       Number using O5 and O6:                    9
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
-    Number used exclusively as route-thrus:      4
-      Number with same-slice register load:      4
+    Number used exclusively as route-thrus:      8
+      Number with same-slice register load:      8
       Number with same-slice carry load:         0
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    21 out of   1,430    1%
+  Number of occupied Slices:                    20 out of   1,430    1%
   Number of MUXCYs used:                         0 out of   2,860    0%
-  Number of LUT Flip Flop pairs used:           69
-    Number with an unused Flip Flop:            17 out of      69   24%
-    Number with an unused LUT:                  16 out of      69   23%
-    Number of fully used LUT-FF pairs:          36 out of      69   52%
+  Number of LUT Flip Flop pairs used:           66
+    Number with an unused Flip Flop:            18 out of      66   27%
+    Number with an unused LUT:                  10 out of      66   15%
+    Number of fully used LUT-FF pairs:          38 out of      66   57%
     Number of unique control sets:               7
     Number of slice register sites lost
-      to control set restrictions:              19 out of  11,440    1%
+      to control set restrictions:              18 out of  11,440    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -53,6 +53,7 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                        12 out of     102   11%
+    Number of LOCed IOBs:                       12 out of      12  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -85,9 +86,9 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.97
+Average Fanout of Non-Clock Nets:                3.91
 
-Peak Memory Usage:  461 MB
+Peak Memory Usage:  462 MB
 Total REAL time to MAP completion:  13 secs 
 Total CPU time to MAP completion:   13 secs 
 
@@ -116,6 +117,8 @@ Section 2 - Warnings
 Section 3 - Informational
 -------------------------
 INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal i_clk are pushed forward
+   through input buffer.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
    can be dramatically reduced by designating them as fast outputs.
@@ -149,18 +152,18 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| i_clk                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| i_rst_n                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| led<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| uart_rx                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| uart_tx                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| i_clk                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| i_rst_n                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| led<0>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<3>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<4>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<5>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<6>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| led<7>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| uart_rx                            | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| uart_tx                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

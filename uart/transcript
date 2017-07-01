@@ -69,16 +69,16 @@
 # Loading work.clk_div_uart(fast)
 # Loading work.uart_rx(fast)
 # Loading work.glbl(fast)
-# ** Warning: (vsim-3017) source/sim/tb_uart.v(219): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) source/sim/tb_uart.v(501): [TFMPC] - Too few port connections. Expected 5, found 4.
 # 
 #         Region: /tb_uart/u_top
-# ** Warning: (vsim-3722) source/sim/tb_uart.v(219): [TFMPC] - Missing connection for port 'led'.
+# ** Warning: (vsim-3722) source/sim/tb_uart.v(501): [TFMPC] - Missing connection for port 'led'.
 # 
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-add wave -position insertpoint sim:/tb_uart/u_top/u_uart/u_uart_rx/*
 add wave -position insertpoint sim:/tb_uart/u_top/u_uart/u_uart_tx/*
+add wave -position insertpoint sim:/tb_uart/u_top/u_uart/u_uart_rx/*
 restart -f
 # Loading work.tb_uart(fast)
 # Loading work.top(fast)
@@ -95,9 +95,9 @@ restart -f
 # Loading work.clk_div_uart(fast)
 # Loading work.uart_rx(fast)
 # Loading work.glbl(fast)
-# ** Warning: (vsim-3017) source/sim/tb_uart.v(219): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) source/sim/tb_uart.v(501): [TFMPC] - Too few port connections. Expected 5, found 4.
 # 
 #         Region: /tb_uart/u_top
-# ** Warning: (vsim-3722) source/sim/tb_uart.v(219): [TFMPC] - Missing connection for port 'led'.
+# ** Warning: (vsim-3722) source/sim/tb_uart.v(501): [TFMPC] - Missing connection for port 'led'.
 # 
 run -continue
