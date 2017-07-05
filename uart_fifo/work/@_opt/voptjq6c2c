@@ -1,0 +1,121 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Roy\Desktop\Proj Local\FPGA-part-time\uart_fifo
+T_opt
+VC>^TMdz1KOX0>;QOCRdmJ0
+04 7 4 work tb_uart fast 0
+04 4 4 work glbl fast 0
+=1-507b9dcc601a-595bbfa4-2e8-338
+o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+OE;O;10.1a;51
+vclk_div_uart
+IXKQ:T1OT[:NzelR;f6b^[2
+VCa4GaKG57m7T3ioZ=az^A2
+Z1 dC:\Users\Roy\Desktop\Proj Local\FPGA-part-time\uart_fifo
+w1498832770
+8source/uart/clk_div_uart.v
+Fsource/uart/clk_div_uart.v
+L0 21
+Z2 OE;L;10.1a;51
+r1
+31
+Z3 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 X`?X0bjS9=94=OO_dmc0]1
+!s90 -reportprogress|300|source/uart/clk_div_uart.v|
+!s108 1499185059.461000
+!s107 source/uart/clk_div_uart.v|
+!i10b 1
+!s85 0
+vfifo_rx
+IR:8mD[KDLagFiaKA^_Ibb1
+V5mUz5^W;4FP=Ff:X[m6b;0
+R1
+w1499083660
+8ipcore/fifo_rx/fifo_rx.v
+Fipcore/fifo_rx/fifo_rx.v
+L0 39
+R2
+r1
+31
+R3
+!s100 flYL7[dV_B2MO>lNFakF`1
+!s90 -reportprogress|300|ipcore/fifo_rx/fifo_rx.v|
+!s108 1499185059.726000
+!s107 ipcore/fifo_rx/fifo_rx.v|
+!i10b 1
+!s85 0
+vglbl
+I6H>g[GGJX>m@E:8e`lYJG2
+VM[9mS]S:KA1i4VeCMX35[3
+R1
+Z4 w1370717315
+8C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v
+FC:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R2
+r1
+31
+R3
+!s100 i0AkO:IL:kR1CaTBQ5YIl2
+!s90 -reportprogress|300|C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v|
+!i10b 1
+!s85 0
+!s108 1499185060.188000
+!s107 C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v|
+vtb_uart
+IWiG1B;C8Ua4ViCgThT7:l3
+VAb5f_mCOcAze;C:cl0mXh1
+R1
+w1499185037
+8source/sim/tb_uart.v
+Fsource/sim/tb_uart.v
+L0 21
+R2
+r1
+31
+R3
+!s90 -reportprogress|300|source/sim/tb_uart.v|
+!s100 Y5GzIRXdbmX`O>77C3eK?0
+!s108 1499185060.041000
+!s107 source/sim/tb_uart.v|
+!i10b 1
+!s85 0
+vuart_fifo_rx
+I[:=SHfR9XO=aBGiDW=H^e1
+VWVe7eEmZ18`c>oW^cQ@8]3
+R1
+w1499183436
+8source/uart_fifo/uart_fifo_rx.v
+Fsource/uart_fifo/uart_fifo_rx.v
+L0 21
+R2
+r1
+31
+R3
+!s100 b]U83m`OUa>oa]_MJlV1Q3
+!s90 -reportprogress|300|source/uart_fifo/uart_fifo_rx.v|
+!s108 1499185059.888000
+!s107 source/uart_fifo/uart_fifo_rx.v|
+!i10b 1
+!s85 0
+vuart_rx
+ILH<9F_gY>36YJIXWOVT`30
+VcfA<Ho:SSLR_VcKmPH^al0
+R1
+w1499084068
+8source/uart/uart_rx.v
+Fsource/uart/uart_rx.v
+L0 21
+R2
+r1
+31
+R3
+!s100 Dji[UJNICQ0=^;JYDc8df1
+!s90 -reportprogress|300|source/uart/uart_rx.v|
+!s108 1499185059.586000
+!s107 source/uart/uart_rx.v|
+!i10b 1
+!s85 0

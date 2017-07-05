@@ -1,0 +1,29 @@
+
+# clk & rst
+NET "i_clk" LOC = P23 | IOSTANDARD = LVCMOS33;
+NET "i_rst_n" LOC = P24 | IOSTANDARD = LVCMOS33;
+
+# uart Ô­ÀíÍ¼¿Óµù°¡
+NET "uart_rx" LOC = P7 | IOSTANDARD = LVCMOS33;
+NET "uart_tx" LOC = P8 | IOSTANDARD = LVCMOS33;
+
+
+# led
+NET "led[0]" LOC = P17 | IOSTANDARD = LVCMOS33;
+NET "led[1]" LOC = P16 | IOSTANDARD = LVCMOS33;
+NET "led[2]" LOC = P15 | IOSTANDARD = LVCMOS33;
+NET "led[3]" LOC = P14 | IOSTANDARD = LVCMOS33;
+NET "led[4]" LOC = P12 | IOSTANDARD = LVCMOS33;
+NET "led[5]" LOC = P11 | IOSTANDARD = LVCMOS33;
+NET "led[6]" LOC = P10 | IOSTANDARD = LVCMOS33;
+NET "led[7]" LOC = P9  | IOSTANDARD = LVCMOS33;
+
+# key
+NET "key_left"		LOC=P44   | IOSTANDARD = LVCMOS33;
+NET "key_right"	    LOC=P41   | IOSTANDARD = LVCMOS33;
+NET "key_up"		LOC=P47   | IOSTANDARD = LVCMOS33;
+NET "key_down"		LOC=P40   | IOSTANDARD = LVCMOS33;
+NET "key_enter"	    LOC=P43   | IOSTANDARD = LVCMOS33;
+
+# timing
+NET i_clk Period = 40ns HIGH 50%;

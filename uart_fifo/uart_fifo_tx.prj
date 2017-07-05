@@ -1,0 +1,4 @@
+verilog work "source/uart/clk_div_uart.v"
+verilog work "source/uart/uart_tx.v"
+verilog work "ipcore/fifo_tx/fifo_tx.v"
+verilog work "source/uart_fifo/uart_fifo_tx.v"

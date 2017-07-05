@@ -1,0 +1,88 @@
+# Reading C:/modeltech_10.1a/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.1a Feb 22 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {tb_uart.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module clk_div_uart
+# 
+# Top level modules:
+# 	clk_div_uart
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module fifo_tx
+# 
+# Top level modules:
+# 	fifo_tx
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module fifo_rx
+# 
+# Top level modules:
+# 	fifo_rx
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module uart_fifo_tx
+# 
+# Top level modules:
+# 	uart_fifo_tx
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module uart_fifo_rx
+# 
+# Top level modules:
+# 	uart_fifo_rx
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.tb_uart glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.tb_uart(fast)
+# Loading work.uart_fifo_rx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.clk_div_uart(fast)
+# Loading work.fifo_rx(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_3(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_3_CONV_VER(fast)
+# Loading xilinxcorelib_ver.fifo_generator_v9_3_bhv_ver_ss(fast)
+# Loading work.uart_fifo_tx(fast)
+# Loading work.uart_tx(fast)
+# Loading work.fifo_tx(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_3(fast__1)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V9_3_CONV_VER(fast__1)
+# Loading xilinxcorelib_ver.fifo_generator_v9_3_bhv_ver_ss(fast__1)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Roy  Hostname: ROY-PC  ProcessID: 824
+# 
+#           Attempting to use alternate WLF file "./wlft87g877".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft87g877
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
