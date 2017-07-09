@@ -1,0 +1,2 @@
+verilog work "source/iic/clk_div_iic.v"
+verilog work "source/iic/iic_ctrl.v"

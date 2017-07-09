@@ -1,0 +1,43 @@
+# Reading C:/modeltech_10.1a/tcl/vsim/pref.tcl 
+# //  ModelSim SE 10.1a Feb 22 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {tb.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module clk_div_iic
+# 
+# Top level modules:
+# 	clk_div_iic
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module iic_ctrl
+# 
+# Top level modules:
+# 	iic_ctrl
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.tb glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.tb(fast)
+# Loading work.iic_ctrl(fast)
+# Loading work.clk_div_iic(fast)
+# Loading work.glbl(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
