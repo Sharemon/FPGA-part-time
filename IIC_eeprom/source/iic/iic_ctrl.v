@@ -103,7 +103,7 @@ assign sda_direction =
     
 // ================= sda idle assignment ====================
 always @ (posedge clk or negedge rst_n) begin
-    if (!rst_n)             sda_idle <= 1'b0;
+    if (!rst_n)             sda_idle <= 1'b1;
     else if (start_valid)   sda_idle <= 1'b0;
     else if (stop_valid)    sda_idle <= 1'b1;
     else if (wr_valid)      sda_idle <= 1'bz;
@@ -122,14 +122,14 @@ end
 // write scl
 always @ (posedge clk or negedge rst_n) begin
     if (!rst_n)                         scl_wr <= 1'b0;
-    else if (half_clk_cnt[1:0] == 2'd2) scl_wr <= 1'b1;
-    else if (half_clk_cnt[1:0] == 2'd0) scl_wr <= 1'b0;
+    else if (half_clk_cnt[1:0] == 2'd1) scl_wr <= 1'b1;
+    else if (half_clk_cnt[1:0] == 2'd3) scl_wr <= 1'b0;
 end
 
 // write sda 
 always @ (posedge clk or negedge rst_n) begin
     if (!rst_n)     sda_wr <= 1'b0;
-    else if (~half_clk_cnt[5] && (half_clk_cnt[1:0] == 2'd1)) begin
+    else if (~half_clk_cnt[5] && (half_clk_cnt[1:0] == 2'd0)) begin
         case (half_clk_cnt[5:2])
             4'd0 :  sda_wr <= din[7];
             4'd1 :  sda_wr <= din[6];
@@ -147,7 +147,7 @@ end
 // read ack after write 8 bit
 always @ (posedge clk or negedge rst_n) begin
     if (!rst_n)                     ack_in <= ACK;
-    else if (half_clk_cnt == 6'd35) ack_in <= sda;
+    else if (half_clk_cnt == 6'd34) ack_in <= sda;
 end
 
 
@@ -162,8 +162,8 @@ end
 // read scl
 always @ (posedge clk or negedge rst_n) begin
     if (!rst_n)                         scl_rd <= 1'b0;
-    else if (half_clk_cnt[1:0] == 2'd2) scl_rd <= 1'b1;
-    else if (half_clk_cnt[1:0] == 2'd0) scl_rd <= 1'b0;
+    else if (half_clk_cnt[1:0] == 2'd1) scl_rd <= 1'b1;
+    else if (half_clk_cnt[1:0] == 2'd3) scl_rd <= 1'b0;
 end
 
 // read sda 
@@ -171,7 +171,7 @@ wire rd_pulse;
 wire rd_pulse_w;
 reg  rd_pulse_r;
 
-assign rd_pulse_w = rd_valid & ~half_clk_cnt[5] & (half_clk_cnt[1:0] == 2'd3);
+assign rd_pulse_w = rd_valid & ~half_clk_cnt[5] & (half_clk_cnt[1:0] == 2'd2);
 always @ (posedge clk or negedge rst_n) begin
     if (!rst_n)                     rd_pulse_r <= 1'b0;
     else                            rd_pulse_r <= rd_pulse_w;
@@ -188,7 +188,7 @@ end
 // send ack after read 8 bit
 always @ (posedge clk or negedge rst_n) begin
     if (!rst_n)                     sda_rd <= 1'b0;
-    else if (half_clk_cnt == 6'd35) sda_rd <= ack_out;
+    else if (half_clk_cnt == 6'd32) sda_rd <= ack_out;
 end
 
 
@@ -203,16 +203,17 @@ end
 
 // start scl
 always @ (posedge clk or negedge rst_n) begin
-    if (!rst_n)                     scl_start <= 1'b1;
-    else if (start_en)              scl_start <= 1'b1;
-    else if (half_clk_cnt == 6'h4)  scl_start <= 1'b0;
+    if (!rst_n)                     scl_start <= 1'b0;
+    else if (start_en)              scl_start <= 1'b0;
+    else if (^ half_clk_cnt[1:0])   scl_start <= 1'b1;
+    else                            scl_start <= 1'b0;
 end
 
 // start sda
 always @ (posedge clk or negedge rst_n) begin
     if (!rst_n)                     sda_start <= 1'b1;
     else if (start_en)              sda_start <= 1'b1;
-    else if (half_clk_cnt == 6'h3)  sda_start <= 1'b0;
+    else if (|half_clk_cnt[2:1])    sda_start <= 1'b0;
 end
 
 
@@ -230,14 +231,15 @@ end
 always @ (posedge clk or negedge rst_n) begin
     if (!rst_n)                     scl_stop <= 1'b0;
     else if (stop_en)               scl_stop <= 1'b0;
-    else if (half_clk_cnt == 8'h2)  scl_stop <= 1'b1;
+    else if (^half_clk_cnt[1:0])    scl_stop <= 1'b1;
+    else                            scl_stop <= 1'b0;
 end
 
 // stop sda
 always @ (posedge clk or negedge rst_n) begin
     if (!rst_n)                     sda_stop <= 1'b0;
     else if (stop_en)               sda_stop <= 1'b0;
-    else if (half_clk_cnt == 8'h3)  sda_stop <= 1'b1;
+    else if (|half_clk_cnt[2:1])    sda_stop <= 1'b1;
 end
 
 

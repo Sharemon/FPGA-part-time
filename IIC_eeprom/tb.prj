@@ -1,3 +1,5 @@
 verilog work "source/iic/clk_div_iic.v"
 verilog work "source/iic/iic_ctrl.v"
+verilog work "source/sim/EEPROM.v"
+verilog work "source/eeprom/eeprom_ctrl.v"
 verilog work "source/sim/tb.v"

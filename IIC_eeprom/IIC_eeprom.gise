@@ -23,6 +23,9 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="eeprom_ctrl.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="eeprom_ctrl.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="eeprom_ctrl.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="iic_ctrl.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="iic_ctrl.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="iic_ctrl.xst"/>
@@ -38,12 +41,19 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1499604075" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1499604075">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1499619656" xil_pn:in_ck="7708044016117223931" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1499619656">
+    <transform xil_pn:end_ts="1499790398" xil_pn:in_ck="-4966056598876667754" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1499790398">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="source/eeprom/eeprom_ctrl.v"/>
       <outfile xil_pn:name="source/iic/clk_div_iic.v"/>
       <outfile xil_pn:name="source/iic/iic_ctrl.v"/>
+      <outfile xil_pn:name="source/sim/EEPROM.v"/>
       <outfile xil_pn:name="source/sim/tb.v"/>
     </transform>
     <transform xil_pn:end_ts="1499604075" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7128511773193751507" xil_pn:start_ts="1499604075">
@@ -58,16 +68,28 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1499619656" xil_pn:in_ck="7708044016117223931" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1499619656">
+    <transform xil_pn:end_ts="1499790398" xil_pn:in_ck="-4966056598876667754" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1499790398">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="source/eeprom/eeprom_ctrl.v"/>
       <outfile xil_pn:name="source/iic/clk_div_iic.v"/>
       <outfile xil_pn:name="source/iic/iic_ctrl.v"/>
+      <outfile xil_pn:name="source/sim/EEPROM.v"/>
       <outfile xil_pn:name="source/sim/tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1499619672" xil_pn:in_ck="7708044016117223931" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-693650516035860459" xil_pn:start_ts="1499619656">
+    <transform xil_pn:end_ts="1499790401" xil_pn:in_ck="-4966056598876667754" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-1466775068447524582" xil_pn:start_ts="1499790398">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="tb.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> Parameter xsthdpdir set to C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.24 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> Reading design: tb.prj
 
@@ -43,16 +43,20 @@ Analyzing Verilog file "C:\Users\Roy\Desktop\Proj Local\FPGA-part-time\IIC_eepro
 Parsing module <clk_div_iic>.
 Analyzing Verilog file "C:\Users\Roy\Desktop\Proj Local\FPGA-part-time\IIC_eeprom\source\iic\iic_ctrl.v" into library work
 Parsing module <iic_ctrl>.
+Analyzing Verilog file "C:\Users\Roy\Desktop\Proj Local\FPGA-part-time\IIC_eeprom\source\sim\EEPROM.v" into library work
+Parsing module <EEPROM>.
+Analyzing Verilog file "C:\Users\Roy\Desktop\Proj Local\FPGA-part-time\IIC_eeprom\source\eeprom\eeprom_ctrl.v" into library work
+Parsing module <eeprom_ctrl>.
 Analyzing Verilog file "C:\Users\Roy\Desktop\Proj Local\FPGA-part-time\IIC_eeprom\source\sim\tb.v" into library work
 Parsing module <tb>.
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.02 secs
+Total CPU time to Xst completion: 5.86 secs
  
 --> 
 
-Total memory usage is 178704 kilobytes
+Total memory usage is 178768 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

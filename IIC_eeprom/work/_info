@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dC:\Users\Roy\Desktop\Proj Local\FPGA-part-time\IIC_eeprom
 T_opt
-VazVGfZ2nkJSRGT[BYkCbf1
+Vo0JO?6<CYl0YPbi@HJ;S62
 04 2 4 work tb fast 0
 04 4 4 work glbl fast 0
-=1-507b9dcc601a-59626165-144-b500
+=1-507b9dcc601a-5964fc55-2a3-487c
 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
 n@_opt
 OE;O;10.1a;51
@@ -25,8 +25,45 @@ r1
 Z3 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
 !s100 M7jSdXDi;g=_ZJ2>Qj1b=1
 !s90 -reportprogress|300|source/iic/clk_div_iic.v|
-!s108 1499619683.996000
+!s108 1499790419.361000
 !s107 source/iic/clk_div_iic.v|
+!i10b 1
+!s85 0
+vEEPROM
+Ik:XLU;az49e6:2ea`0;Ab0
+VUB:3No6_cBO<26CRdaM0<1
+R1
+w1499789213
+8source/sim/EEPROM.v
+Fsource/sim/EEPROM.v
+L0 12
+R2
+r1
+31
+R3
+n@e@e@p@r@o@m
+!s100 mDaocOniiA1^X5SY:Y]_d2
+!s90 -reportprogress|300|source/sim/EEPROM.v|
+!s108 1499790419.805000
+!s107 source/sim/EEPROM.v|
+!i10b 1
+!s85 0
+veeprom_ctrl
+I>^:CYD@0nNF95N>2FeA>91
+VWT6VHa50E3=Y``JEPnVGj2
+R1
+w1499786644
+8source/eeprom/eeprom_ctrl.v
+Fsource/eeprom/eeprom_ctrl.v
+L0 47
+R2
+r1
+31
+R3
+!s100 ?W7?nl`FFEkUMWKaiMfVm0
+!s90 -reportprogress|300|source/eeprom/eeprom_ctrl.v|
+!s108 1499790420.036000
+!s107 source/eeprom/eeprom_ctrl.v|
 !i10b 1
 !s85 0
 vglbl
@@ -45,13 +82,13 @@ R3
 !s90 -reportprogress|300|C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v|
 !i10b 1
 !s85 0
-!s108 1499619684.522000
+!s108 1499790420.537000
 !s107 C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v|
 viic_ctrl
-IfXJX[Rl4R370b6KfQeL803
+ICfCEAaAPHDLRIeW8>lg_N1
 V9e[T6QObZ:Z?aYRe@ACfm3
 R1
-w1499619644
+w1499779190
 8source/iic/iic_ctrl.v
 Fsource/iic/iic_ctrl.v
 L0 21
@@ -59,17 +96,17 @@ R2
 r1
 31
 R3
+!s100 VcS<<CXe;PJ[e?iFMFK:_1
 !s90 -reportprogress|300|source/iic/iic_ctrl.v|
-!s100 l>I=lz]LaDR_HZ:=KBVNV3
-!s108 1499619684.155000
+!s108 1499790419.539000
 !s107 source/iic/iic_ctrl.v|
 !i10b 1
 !s85 0
 vtb
-I<aQ[07A[kk^>Dlm0>lZ[62
+IYW;hYJYKhX3YEF3BJEg3K0
 VV@Xn<HnSRM[I5c1?BH]3a3
 R1
-w1499619131
+w1499790396
 8source/sim/tb.v
 Fsource/sim/tb.v
 L0 21
@@ -77,9 +114,9 @@ R2
 r1
 31
 R3
-!s100 l<6fD4EOVo:FjgX4z>M`D3
 !s90 -reportprogress|300|source/sim/tb.v|
-!s108 1499619684.327000
+!s100 ja9O[3^;>aP^W6FI[YTWP0
+!s108 1499790420.240000
 !s107 source/sim/tb.v|
 !i10b 1
 !s85 0

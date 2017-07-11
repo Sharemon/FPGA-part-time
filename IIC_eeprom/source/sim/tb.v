@@ -25,15 +25,12 @@ reg clk;
 reg rst_n;
 wire scl;
 wire sda;
-reg [7:0] din;
-wire [7:0] dout;
-wire ack_in;
-reg ack_out;
+reg [7:0]  ctrl_byte;
+reg [31:0] data_in;
+wire [31:0] data_out;
+reg  req;
+wire ack;
 wire busy;
-reg wr_en;
-reg rd_en;
-reg stop_en;
-reg start_en;
 
 
 always begin
@@ -51,67 +48,41 @@ initial begin
 end
 
 initial begin
-    wr_en = 0;
-    rd_en = 0;
-    stop_en = 0;
-    start_en = 0;
-    din = 0;
-    ack_out = 1;
+    req = 0;
+    ctrl_byte = 8'hA6;
+    data_in = 32'h12345678;
     #10000;
     
-    // start_en
-    start_en = 1;
-    #40;
-    start_en = 0;
+    req = 1;
+    # 60;
+    req = 0;
     
-    // write data
-    #10100;
-    din = 8'hC6;
-    wr_en = 1;
-    #40;
-    wr_en = 0;
+    # 600000;
+    ctrl_byte = 8'hA7;
+    #10000;
     
-    // write data
-    #90040;
-    din = 8'h32;
-    wr_en = 1;
-    #40;
-    wr_en = 0;
-    # 80000;
-    force sda = 1;
+    req = 1;
+    # 60;
+    req = 0;
     
-    // read data
-    #10040;
-    force sda = 1;
-    rd_en = 1;
-    #40;
-    rd_en = 0;
-    # 80000;
-    release sda;
-    // stop_en
-    #10040;
-    stop_en = 1;
-    #40;
-    stop_en = 0;
 end
 
+EEPROM u_EEPROM(
+	.scl	(scl),
+	.sda	(sda)
+);
 
-
-
-iic_ctrl i_iic_ctrl(
-    .clk        (clk),
-    .rst_n      (rst_n),
-    .scl        (scl),
-    .sda        (sda),
-    .din        (din),
-    .ack_in     (ack_in),
-    .dout       (dout),
-    .ack_out    (ack_out),
-    .wr_en      (wr_en),
-    .rd_en      (rd_en),
-    .start_en   (start_en),
-    .stop_en    (stop_en),
-    .busy       (busy)
+eeprom_ctrl i_eeprom_ctrl(
+    .clk             (clk),
+    .rst_n           (rst_n),
+    .scl             (scl),
+    .sda             (sda),
+    .ctrl_byte       (ctrl_byte),
+    .data_in         (data_in),
+    .data_out        (data_out),
+    .req             (req),
+    .ack             (ack),
+    .busy            (busy)
 );
 
 
