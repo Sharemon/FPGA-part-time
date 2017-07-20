@@ -1,0 +1,131 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Roy\Desktop\Proj Local\FPGA-part-time\IIC_eeprom
+T_opt
+Vo0JO?6<CYl0YPbi@HJ;S62
+Z1 04 2 4 work tb fast 0
+Z2 04 4 4 work glbl fast 0
+=1-507b9dcc601a-5964fc55-2a3-487c
+Z3 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+n@_opt
+Z4 OE;O;10.1a;51
+Z5 dC:\Users\Roy\Desktop\Proj Local\FPGA-part-time\IIC_eeprom
+T_opt1
+Vg[4=Oc`zgFd0QnhP4:^Ph1
+R1
+R2
+=1-507b9dcc601a-596f483b-372-384
+R3
+n@_opt1
+R4
+vclk_div_iic
+IzW?mKg;5Lf7PRh[kB99CT2
+Vc^`cM6F0_elAX`;d4n^X^0
+R5
+w1499615040
+8source/iic/clk_div_iic.v
+Fsource/iic/clk_div_iic.v
+L0 21
+Z6 OE;L;10.1a;51
+r1
+31
+Z7 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 M7jSdXDi;g=_ZJ2>Qj1b=1
+!s90 -reportprogress|300|source/iic/clk_div_iic.v|
+!s108 1500465211.095000
+!s107 source/iic/clk_div_iic.v|
+!i10b 1
+!s85 0
+vEEPROM
+I?]EONHemcb^c?E5dUFz3Z2
+VUB:3No6_cBO<26CRdaM0<1
+R5
+w1499791595
+8source/sim/EEPROM.v
+Fsource/sim/EEPROM.v
+L0 12
+R6
+r1
+31
+R7
+n@e@e@p@r@o@m
+!s100 hC^=_U`Li?`WXPz_LZGPE0
+!s90 -reportprogress|300|source/sim/EEPROM.v|
+!s108 1500465211.276000
+!s107 source/sim/EEPROM.v|
+!i10b 1
+!s85 0
+veeprom_ctrl
+I>^:CYD@0nNF95N>2FeA>91
+VWT6VHa50E3=Y``JEPnVGj2
+R5
+w1499786644
+8source/eeprom/eeprom_ctrl.v
+Fsource/eeprom/eeprom_ctrl.v
+L0 47
+R6
+r1
+31
+R7
+!s100 ?W7?nl`FFEkUMWKaiMfVm0
+!s90 -reportprogress|300|source/eeprom/eeprom_ctrl.v|
+!s108 1500465211.367000
+!s107 source/eeprom/eeprom_ctrl.v|
+!i10b 1
+!s85 0
+vglbl
+I6H>g[GGJX>m@E:8e`lYJG2
+VM[9mS]S:KA1i4VeCMX35[3
+R5
+Z8 w1370717315
+8C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v
+FC:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R6
+r1
+31
+R7
+!s100 i0AkO:IL:kR1CaTBQ5YIl2
+!s90 -reportprogress|300|C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v|
+!i10b 1
+!s85 0
+!s108 1500465211.570000
+!s107 C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v|
+viic_ctrl
+ICfCEAaAPHDLRIeW8>lg_N1
+V9e[T6QObZ:Z?aYRe@ACfm3
+R5
+w1499779190
+8source/iic/iic_ctrl.v
+Fsource/iic/iic_ctrl.v
+L0 21
+R6
+r1
+31
+R7
+!s100 VcS<<CXe;PJ[e?iFMFK:_1
+!s90 -reportprogress|300|source/iic/iic_ctrl.v|
+!s108 1500465211.173000
+!s107 source/iic/iic_ctrl.v|
+!i10b 1
+!s85 0
+vtb
+I8CO3=oKM48c^<j2m0`PG02
+VV@Xn<HnSRM[I5c1?BH]3a3
+R5
+w1500465197
+8source/sim/tb.v
+Fsource/sim/tb.v
+L0 21
+R6
+r1
+31
+R7
+!s90 -reportprogress|300|source/sim/tb.v|
+!s100 =ak_Az;JXe[7JD6LfiX6@0
+!s108 1500465211.472000
+!s107 source/sim/tb.v|
+!i10b 1
+!s85 0

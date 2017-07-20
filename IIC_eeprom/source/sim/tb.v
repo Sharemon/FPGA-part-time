@@ -54,7 +54,7 @@ initial begin
     #10000;
     
     req = 1;
-    # 60;
+    # 20;
     req = 0;
     
     # 600000;
@@ -62,7 +62,7 @@ initial begin
     #10000;
     
     req = 1;
-    # 60;
+    # 20;
     req = 0;
     
 end

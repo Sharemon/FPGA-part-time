@@ -1,0 +1,72 @@
+
+****** PlanAhead v14.6 (64-bit)
+  **** Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/pa.fromHdl.tcl}
+# create_project -name IIC_eeprom -dir "C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/planAhead_run_1" -part xc6slx9tqg144-2
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/source/cons/top.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/source/cons/top.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {ipcore_dir/clk_gen/clk_gen.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {source/iic/clk_div_iic.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {source/iic/iic_ctrl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {source/eeprom/eeprom_ctrl.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {source/top/top.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top top $srcset
+# add_files [list {C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/source/cons/top.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-2
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/source/iic/clk_div_iic.v" into library work
+Analyzing Verilog file "C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/source/iic/iic_ctrl.v" into library work
+Analyzing Verilog file "C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/source/eeprom/eeprom_ctrl.v" into library work
+Analyzing Verilog file "C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/ipcore_dir/clk_gen/clk_gen.v" into library work
+Analyzing Verilog file "C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/source/top/top.v" into library work
+Loading clock regions from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/source/cons/top.ucf]
+Finished Parsing UCF File [C:/Users/Roy/Desktop/Proj Local/FPGA-part-time/IIC_eeprom/source/cons/top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 97c4ed2f
+open_rtl_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 672.746 ; gain = 178.250
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P66 [get_ports scl]
+endgroup
+startgroup
+set_property package_pin P67 [get_ports sda]
+endgroup
+set_property is_loc_fixed false [get_ports [list  sda]]
+set_property is_loc_fixed true [get_ports [list  sda]]
+set_property iostandard LVCMOS33 [get_ports [list scl]]
+set_property iostandard LVCMOS33 [get_ports [list sda]]
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Jul 19 20:08:35 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead
